@@ -13,6 +13,27 @@ public interface FruitFactor {
     int APPLE = 1212312;
     int BANANA = 344534;
     int CHARRY = 353466;
+   //限定某傳入數值的範疇
+    enum FruitType{
+	APPLE,
+	BANANA,
+	CHARRY
+    }
+    
+    
+    static Fruit createFruitByEnum(FruitType type){
+		switch(type){
+		    case APPLE:
+			return new Apple();
+		    case BANANA:
+			return new Banana();
+		    case CHARRY:
+			return new Charry();
+		    default:
+		 throw new IllegalArgumentException();		
+		}
+	}
+    
     static Fruit createFruit(int type){
 	switch(type){
 	    case 1212312:
@@ -24,6 +45,7 @@ public interface FruitFactor {
 	    default:
 	  throw new IllegalArgumentException();	
 	}
-	
-    }
+   }  
+    
+    
 }
