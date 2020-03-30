@@ -10,13 +10,16 @@ package ch18_20200330.test_enum;
  * @author xvpow
  */
 public interface FruitFactor {
+    int APPLE = 1212312;
+    int BANANA = 344534;
+    int CHARRY = 353466;
     static Fruit createFruit(int type){
 	switch(type){
-	    case 1:
+	    case 1212312:
 		return new Apple();
-	    case 2:
+	    case 344534:
 		return new Banana();
-	   case 3:
+	   case 353466:
 		return new Charry();	
 	    default:
 	  throw new IllegalArgumentException();	
