@@ -29,12 +29,25 @@ public class Ch18_6 {
 	//合併
 	List<Integer> arrayList2 = new ArrayList<>();
 	arrayList2.add(42);
+	arrayList2.add(71);
 	arrayList2.add(16);
 	arrayList2.add(78);
 	arrayList.addAll(arrayList2);//將arrayList2合併到arrayList	
 	System.out.println(arrayList);
 	System.out.println(arrayList.contains(16));//詢問List是否有16這個數值
 	System.out.println(arrayList.contains(785));//詢問List是否有785這個數值
+	
+	//由左往右找 找到就停止
+	int index1 = arrayList.indexOf(71);
+	//由右往左找 找到就停止
+	int index2 = arrayList.lastIndexOf(71);
+	System.out.println(index1+":"+index2);
+	//找不到就-1
+	int index3 = arrayList.indexOf(51);
+	System.out.println(index3);
+	arrayList.remove(index1);//移除某個List的內容
+	System.out.println(arrayList);
+	
     }
     
 }
