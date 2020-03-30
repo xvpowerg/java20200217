@@ -17,6 +17,16 @@ public class Ch18_3 {
 	arrayList.add(31);
 	arrayList.add(57);
 	arrayList.add(83);
+	//1 
+	    for (int i =0; i < arrayList.size();i++){
+		System.out.print(arrayList.get(i)+" ");
+	    }
+	    System.out.println();
+	//2
+	    for (Object v : arrayList ){
+		System.out.print(v+" ");
+	    }
+	
 	//LinkedList
 	
     }
