@@ -10,7 +10,7 @@ package ch18_20200330.test_enum;
  * @author xvpow
  */
 public class Apple implements Fruit {
-
+    //Test
     @Override
     public String getName() {
 	return "Apple";
