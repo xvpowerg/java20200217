@@ -26,7 +26,12 @@ public class Ch18_3 {
 	    for (Object v : arrayList ){
 		System.out.print(v+" ");
 	    }
-	
+	    System.out.println();
+	//3 forEach method java 8能用的
+	    arrayList.forEach(i->System.out.print(i+" "));
+	     System.out.println();
+	//4 stream
+	arrayList.stream().forEach(i->System.out.print(i+" "));
 	//LinkedList
 	
     }
