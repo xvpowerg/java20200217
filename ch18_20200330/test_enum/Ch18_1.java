@@ -14,6 +14,8 @@ public class Ch18_1 {
     public static void main(String[] args) {
          Fruit f1 = FruitFactor.createFruit(FruitFactor.CHARRY);
 	System.out.println(f1.getName()+":"+ f1.getPrice());
+	
+	FruitFactor.createFruitByEnum(FruitFactor.FruitType.CHARRY);
 
     }
     
