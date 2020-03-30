@@ -45,8 +45,13 @@ public class Ch18_6 {
 	//找不到就-1
 	int index3 = arrayList.indexOf(51);
 	System.out.println(index3);
-	arrayList.remove(index1);//移除某個List的內容
+	arrayList.remove(index1);//移除某個指定List的 index 內容
+	System.out.println(arrayList);	
+	//arrayList.remove(36);//會拋出錯誤
+	arrayList.remove(Integer.valueOf(36));//移除某個List的物件
 	System.out.println(arrayList);
+	
+	
 	
     }
     
