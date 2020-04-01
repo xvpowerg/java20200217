@@ -50,7 +50,7 @@ public class Student {
 	  }
 	  Student tmpSt  = (Student)obj;
 	  return this.getAge() == tmpSt.getAge() && 
-		  this.getScore() == this.getScore() && 
+		  this.getScore() == tmpSt.getScore() && 
 		  this.getName().equals(tmpSt.getName());
     }
     
