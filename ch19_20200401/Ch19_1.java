@@ -27,7 +27,15 @@ public class Ch19_1 {
 	System.out.println("======poll========");
 	System.out.println(name1);
 	System.out.println("======poll========");
+	
 	queue.forEach(System.out::println);
+	String name2 = queue.peek();
+	System.out.println("======peek========");
+	System.out.println(name2);
+	System.out.println("======peek========");
+	queue.forEach(System.out::println);
+	
+	
     }
     
 }
