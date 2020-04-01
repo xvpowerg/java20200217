@@ -14,13 +14,16 @@ public class Ch19_4 {
 	Student st2 = new Student("Vivin",92,16);
 	Student st3 = new Student("Lindy",82,13);
 	Student st4 = new Student("Lindy",82,13);
+	//HashSet 過濾重複　先比較hasCode 在比較 equals
 	stSet.add(st1);
 	stSet.add(st2);
         stSet.add(st3);
 	stSet.add(st4);
         stSet.forEach(System.out::println);
-	
-	
+	System.out.println(st1.hashCode());
+	System.out.println(st2.hashCode());
+	System.out.println(st3.hashCode());
+	System.out.println(st4.hashCode());
     }
     
 }
