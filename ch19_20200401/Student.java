@@ -44,6 +44,14 @@ public class Student {
     public String toString(){
 	return this.getName()+":"+this.getScore()+":"+this.getAge();
     }
-    
+    public boolean equals(Object obj){
+	  if (obj == null | obj instanceof Student == false){
+	      return false;
+	  }
+	  Student tmpSt  = (Student)obj;
+	  return this.getAge() == tmpSt.getAge() && 
+		  this.getScore() == this.getScore() && 
+		  this.getName().equals(tmpSt.getName());
+    }
     
 }
