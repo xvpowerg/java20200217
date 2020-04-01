@@ -53,5 +53,9 @@ public class Student {
 		  this.getScore() == tmpSt.getScore() && 
 		  this.getName().equals(tmpSt.getName());
     }
+    //hashCode 不同一定不是相同物件
+    public int hashCode(){
+       return this.getName().hashCode() + this.getScore()+this.getAge();
+    }
     
 }
